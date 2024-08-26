@@ -2,7 +2,7 @@ const deadline = new Date("2024-08-26T21:12:30"); // Set the deadline (example -
 
 // Sample Data (Replace with your actual data source)
 const playersData = [
-      { id: 1,  name: "Osama",         position: "Fwd", price: 11, goals: 3, assists: 2,  willPlayNextMatch: true  },
+      { id: 1,  name: "Osama",         position: "Fwd", price: 11, goals: 0, assists: 0,  willPlayNextMatch: true  },
       { id: 2,  name: "Mazen Hany",    position: "Fwd", price: 8,  goals: 0, assists: 0,  willPlayNextMatch: true  },
       { id: 3,  name: "Yousef Magdy",  position: "Mid", price: 14, goals: 1, assists: 0,  willPlayNextMatch: true  },
       { id: 4,  name: "Omar Ibrahim",  position: "Fwd", price: 9,  goals: 0, assists: 0,  willPlayNextMatch: true  },
