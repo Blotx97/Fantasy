@@ -1,0 +1,217 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    color: #343a40;            
+    line-height: 1.6;          
+}
+
+header {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #e2e6ea; 
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 80%; 
+}
+
+h2 {
+    color: #007bff; 
+    margin-bottom: 1rem;
+}
+
+/* TABLE STYLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9em; 
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+th {
+    background-color: #f8f9fa; 
+    font-weight: 600;
+}
+
+td button { /* Targets buttons within table cells */
+    margin-left: 10px; /* Adjust this value as needed */
+}
+
+/* TEAM DISPLAY */
+#team-container {
+    border: 1px solid #ced4da; 
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.player-card {
+    width: 120px; 
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6; 
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    display: flex;        
+    flex-direction: column; 
+    align-items: center;    
+}
+
+img {
+    transition: transform 0.2s ease; /* Add a smooth transition */
+}
+
+img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.player-card:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+.player-card img {
+    width: 50px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin: 0 auto 0.5rem auto; 
+    display: block; 
+}
+
+.remove-player { 
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-player:hover {
+    background-color: #c82333;
+}
+
+/* BUDGET DISPLAY */
+#team-budget {
+    margin-bottom: 1rem;
+}
+
+#remaining-budget {
+    font-weight: 600;
+    color: #28a745;
+}
+
+/* SEARCH BAR */
+#player-search {
+    width: 100%; 
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #ced4da; 
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* BUTTONS */
+button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    transition: transform 0.2s ease; /* Add a smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 768px) { 
+    section {
+        max-width: 95%;  
+        padding: 1.5rem; 
+    }
+
+    .player-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) { 
+    section {
+        padding: 1rem;
+    }
+
+    nav li {
+        display: block; 
+        margin: 0.5rem 0;
+    }
+
+    .player-card {
+        width: 95%;
+    }
+}
+
+/* Center the "Selected Players" heading */
+#my-team h3 {
+    text-align: center;
+}
+
+/* Center the button in its container */
+#save-team-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#deadline-info {
+  text-align: center;
+  margin-bottom: 10px; 
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Match Fantasy League</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Our Match Fantasy League</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#players">Players</a></li>
+                <li><a href="#my-team">My Team</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the League!</h2>
+        <p>Test your knowledge about your friends!</p>
+        <button onclick="login()">Login</button>
+        <span id="welcome-message"></span> 
+    </section>
+
+    <section id="players">
+        <h2>Player List</h2>
+        <input type="text" id="player-search" placeholder="Search players...">
+        <table>
+            <thead>
+                <tr>
+                    <th></th> 
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Price</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                    <th>Select</th> 
+                </tr>
+            </thead>
+            <tbody id="player-table-body">
+            </tbody>
+        </table>
+    </section>
+
+    <section id="my-team">
+        <h2>My Team</h2>
+        <div id="team-budget">
+            Budget: <span id="remaining-budget">50</span> Million
+        </div>
+
+        <div id="deadline-info">
+            Team Selection Deadline: <span id="deadline-time"></span>
+        </div>
+
+        <h3>Selected Players</h3> 
+        <div id="team-container">
+            <!-- Selected players will appear here -->
+        </div>
+
+        <div id="save-team-container"> 
+            <button id="save-team-button" onclick="saveTeam()">Save Team</button>
+        </div>
+    </section>
+
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <button id="updateLeaderboardButton">Update Leaderboard</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Leaderboard entries will be loaded here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ... (rest of your HTML) -->
+
+    <script src="app.js"></script> 
+</body>
+</html>
