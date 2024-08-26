@@ -1,4 +1,4 @@
-const deadline = new Date("2024-08-26T21:48:30"); // Set the deadline (example - replace with your actual deadline)
+const deadline = new Date("2024-08-26T21:52:30"); // Set the deadline (example - replace with your actual deadline)
 
 // Sample Data (Replace with your actual data source)
 const playersData = [
